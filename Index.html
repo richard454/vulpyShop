@@ -1,0 +1,264 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>VulpyShop - Tecnología en Paraguay</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+<body>
+    <!-- Header -->
+    <header class="header">
+        <div class="container">
+            <div class="logo">
+                <img src="logo.png" alt="VulpyShop Logo">
+                <h1>VulpyShop</h1>
+            </div>
+            <nav class="nav">
+                <a href="#productos">Productos</a>
+                <a href="#contacto">Contacto</a>
+            </nav>
+            <div class="cart-icon">
+                <i class="fas fa-shopping-cart"></i>
+                <span class="cart-count">0</span>
+            </div>
+        </div>
+    </header>
+
+    <!-- Hero Section -->
+    <section class="hero">
+        <div class="hero-content">
+            <h2>La mejor tecnología al alcance de tu mano</h2>
+            <p>Productos de calidad con envíos a todo Paraguay</p>
+            <a href="#productos" class="btn-primary">Ver productos</a>
+        </div>
+    </section>
+
+    <!-- Search and Filter -->
+    <section class="search-section">
+        <div class="container">
+            <div class="search-bar">
+                <i class="fas fa-search"></i>
+                <input type="text" id="searchInput" placeholder="Buscar productos...">
+            </div>
+            <div class="categories">
+                <button class="category-btn active" data-category="all">Todos</button>
+                <button class="category-btn" data-category="audio">Audio</button>
+                <button class="category-btn" data-category="accesorios">Accesorios</button>
+                <button class="category-btn" data-category="computo">Cómputo</button>
+                <button class="category-btn" data-category="gaming">Gaming</button>
+            </div>
+        </div>
+    </section>
+
+    <!-- Products Section -->
+    <section id="productos" class="products-section">
+        <div class="container">
+            <h2 class="section-title">Nuestros Productos</h2>
+            <div class="products-grid" id="productsGrid">
+                
+                <!-- Producto 1 -->
+                <div class="product-card" data-category="audio">
+                    <div class="product-image">
+                        <img src="https://images.unsplash.com/photo-1505740420928-5e560c06d30e?w=500" alt="Auriculares Bluetooth">
+                        <span class="badge">Nuevo</span>
+                    </div>
+                    <div class="product-info">
+                        <h3>Auriculares Bluetooth Premium</h3>
+                        <p class="product-description">Sonido de alta calidad, cancelación de ruido activa</p>
+                        <div class="product-price">₲ 450.000</div>
+                        <button class="btn-whatsapp" data-product="Auriculares Bluetooth Premium">
+                            <i class="fab fa-whatsapp"></i> Consultar
+                        </button>
+                    </div>
+                </div>
+
+                <!-- Producto 2 -->
+                <div class="product-card" data-category="accesorios">
+                    <div class="product-image">
+                        <img src="https://images.unsplash.com/photo-1583394838336-acd977736f90?w=500" alt="Cargador Rápido">
+                    </div>
+                    <div class="product-info">
+                        <h3>Cargador Rápido 65W</h3>
+                        <p class="product-description">Compatible con múltiples dispositivos, carga ultrarrápida</p>
+                        <div class="product-price">₲ 180.000</div>
+                        <button class="btn-whatsapp" data-product="Cargador Rápido 65W">
+                            <i class="fab fa-whatsapp"></i> Consultar
+                        </button>
+                    </div>
+                </div>
+
+                <!-- Producto 3 -->
+                <div class="product-card" data-category="accesorios">
+                    <div class="product-image">
+                        <img src="https://images.unsplash.com/photo-1572569511254-d8f925fe2cbb?w=500" alt="Cable USB-C">
+                    </div>
+                    <div class="product-info">
+                        <h3>Cable USB-C Premium 2m</h3>
+                        <p class="product-description">Trenzado reforzado, carga rápida y transferencia de datos</p>
+                        <div class="product-price">₲ 85.000</div>
+                        <button class="btn-whatsapp" data-product="Cable USB-C Premium 2m">
+                            <i class="fab fa-whatsapp"></i> Consultar
+                        </button>
+                    </div>
+                </div>
+
+                <!-- Producto 4 -->
+                <div class="product-card" data-category="gaming">
+                    <div class="product-image">
+                        <img src="https://images.unsplash.com/photo-1527814050087-3793815479db?w=500" alt="Mouse Gaming">
+                        <span class="badge hot">Hot</span>
+                    </div>
+                    <div class="product-info">
+                        <h3>Mouse Gaming RGB</h3>
+                        <p class="product-description">12000 DPI, 7 botones programables, iluminación personalizable</p>
+                        <div class="product-price">₲ 320.000</div>
+                        <button class="btn-whatsapp" data-product="Mouse Gaming RGB">
+                            <i class="fab fa-whatsapp"></i> Consultar
+                        </button>
+                    </div>
+                </div>
+
+                <!-- Producto 5 -->
+                <div class="product-card" data-category="computo">
+                    <div class="product-image">
+                        <img src="https://images.unsplash.com/photo-1587829741301-dc798b83add3?w=500" alt="Teclado Mecánico">
+                    </div>
+                    <div class="product-info">
+                        <h3>Teclado Mecánico RGB</h3>
+                        <p class="product-description">Switches mecánicos, retroiluminación RGB, anti-ghosting</p>
+                        <div class="product-price">₲ 550.000</div>
+                        <button class="btn-whatsapp" data-product="Teclado Mecánico RGB">
+                            <i class="fab fa-whatsapp"></i> Consultar
+                        </button>
+                    </div>
+                </div>
+
+                <!-- Producto 6 -->
+                <div class="product-card" data-category="audio">
+                    <div class="product-image">
+                        <img src="https://images.unsplash.com/photo-1590658268037-6bf12165a8df?w=500" alt="Altavoz Bluetooth">
+                    </div>
+                    <div class="product-info">
+                        <h3>Altavoz Bluetooth Portátil</h3>
+                        <p class="product-description">20 horas de batería, resistente al agua IPX7</p>
+                        <div class="product-price">₲ 380.000</div>
+                        <button class="btn-whatsapp" data-product="Altavoz Bluetooth Portátil">
+                            <i class="fab fa-whatsapp"></i> Consultar
+                        </button>
+                    </div>
+                </div>
+
+                <!-- Producto 7 -->
+                <div class="product-card" data-category="accesorios">
+                    <div class="product-image">
+                        <img src="https://images.unsplash.com/photo-1609081219090-a6d81d3085bf?w=500" alt="Webcam HD">
+                    </div>
+                    <div class="product-info">
+                        <h3>Webcam Full HD 1080p</h3>
+                        <p class="product-description">Micrófono integrado, enfoque automático, ideal para streaming</p>
+                        <div class="product-price">₲ 420.000</div>
+                        <button class="btn-whatsapp" data-product="Webcam Full HD 1080p">
+                            <i class="fab fa-whatsapp"></i> Consultar
+                        </button>
+                    </div>
+                </div>
+
+                <!-- Producto 8 -->
+                <div class="product-card" data-category="computo">
+                    <div class="product-image">
+                        <img src="https://images.unsplash.com/photo-1625948515291-69613efd103f?w=500" alt="Hub USB">
+                    </div>
+                    <div class="product-info">
+                        <h3>Hub USB-C 7 en 1</h3>
+                        <p class="product-description">HDMI, USB 3.0, lector SD, puerto ethernet</p>
+                        <div class="product-price">₲ 290.000</div>
+                        <button class="btn-whatsapp" data-product="Hub USB-C 7 en 1">
+                            <i class="fab fa-whatsapp"></i> Consultar
+                        </button>
+                    </div>
+                </div>
+
+                <!-- Producto 9 -->
+                <div class="product-card" data-category="gaming">
+                    <div class="product-image">
+                        <img src="https://images.unsplash.com/photo-1612287230202-1ff1d85d1bdf?w=500" alt="Auriculares Gaming">
+                        <span class="badge">Nuevo</span>
+                    </div>
+                    <div class="product-info">
+                        <h3>Auriculares Gaming 7.1</h3>
+                        <p class="product-description">Sonido envolvente, micrófono retráctil, almohadillas premium</p>
+                        <div class="product-price">₲ 480.000</div>
+                        <button class="btn-whatsapp" data-product="Auriculares Gaming 7.1">
+                            <i class="fab fa-whatsapp"></i> Consultar
+                        </button>
+                    </div>
+                </div>
+
+                <!-- Producto 10 -->
+                <div class="product-card" data-category="accesorios">
+                    <div class="product-image">
+                        <img src="https://images.unsplash.com/photo-1624823183493-ed5832f48f18?w=500" alt="Power Bank">
+                    </div>
+                    <div class="product-info">
+                        <h3>Power Bank 20000mAh</h3>
+                        <p class="product-description">Carga rápida, 3 puertos USB, display LED</p>
+                        <div class="product-price">₲ 250.000</div>
+                        <button class="btn-whatsapp" data-product="Power Bank 20000mAh">
+                            <i class="fab fa-whatsapp"></i> Consultar
+                        </button>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contacto" class="contact-section">
+        <div class="container">
+            <h2>¿Tienes alguna pregunta?</h2>
+            <p>Contáctanos por WhatsApp y te responderemos de inmediato</p>
+            <a href="#" class="btn-primary btn-large" id="contactWhatsapp">
+                <i class="fab fa-whatsapp"></i> Escribir al WhatsApp
+            </a>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-section">
+                    <h3>VulpyShop</h3>
+                    <p>Tu tienda de tecnología de confianza en Paraguay</p>
+                </div>
+                <div class="footer-section">
+                    <h4>Contacto</h4>
+                    <p><i class="fab fa-whatsapp"></i> WhatsApp: +595 XXX XXX XXX</p>
+                    <p><i class="fas fa-envelope"></i> info@vulpyshop.com</p>
+                </div>
+                <div class="footer-section">
+                    <h4>Síguenos</h4>
+                    <div class="social-links">
+                        <a href="#"><i class="fab fa-facebook"></i></a>
+                        <a href="#"><i class="fab fa-instagram"></i></a>
+                        <a href="#"><i class="fab fa-twitter"></i></a>
+                    </div>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2025 VulpyShop. Todos los derechos reservados.</p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- WhatsApp Floating Button -->
+    <a href="#" class="whatsapp-float" id="whatsappFloat">
+        <i class="fab fa-whatsapp"></i>
+    </a>
+
+    <script src="script.js"></script>
+</body>
+</html>
